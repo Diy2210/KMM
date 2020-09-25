@@ -1,0 +1,2 @@
+net/multipul/kmm/android/BuildConfig.java
+ net.multipul.kmm.android.BuildConfig
