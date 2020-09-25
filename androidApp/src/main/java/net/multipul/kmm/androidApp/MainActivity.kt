@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import net.multipul.kmm.shared.Greeting
 import android.widget.TextView
+import net.multipul.kmm.shared.model.MainViewModel
 
 fun greet(): String {
     return Greeting().greeting()
