@@ -16,14 +16,6 @@ repositories {
     mavenCentral()
 }
 
-dependencies {
-    commonMainImplementation("dev.icerock.moko:mvvm:0.8.0")
-    // temporary fix of https://youtrack.jetbrains.com/issue/KT-41083
-    commonMainImplementation("dev.icerock.moko:resources:0.13.0")
-    commonMainImplementation("dev.icerock.moko:parcelize:0.4.0")
-    commonMainImplementation("dev.icerock.moko:graphics:0.4.0")
-}
-
 kotlin {
     android()
     ios {
@@ -43,7 +35,11 @@ kotlin {
             dependencies {
                 implementation("com.squareup.sqldelight:runtime:1.4.3")
                 implementation("io.ktor:ktor-client-android:1.3.2")
-//                implementation("dev.icerock.moko:mvvm:0.8.0")
+                implementation("dev.icerock.moko:mvvm:0.8.0")
+                // temporary fix of https://youtrack.jetbrains.com/issue/KT-41083
+                implementation("dev.icerock.moko:resources:0.13.0")
+                implementation("dev.icerock.moko:parcelize:0.4.0")
+                implementation("dev.icerock.moko:graphics:0.4.0")
             }
         }
         val commonTest by getting {
